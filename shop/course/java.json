@@ -1,0 +1,19 @@
+{
+    "name": "Java",
+    "description": "Java - це об'єктно-орієнтована мова програмування, яка використовується для розробки різноманітних програм та додатків. Вона володіє потужними можливостями і широким спектром застосувань, включаючи веб-розробку, мобільну розробку, розробку вбудованих систем та інше.",
+    "image": "java.webp",
+    "products":[
+    {"name":"Курс Java для початківців",
+    "description":"Бажаєш почати вивчення Java?",
+    "price": 1200,
+    "image": "java1.jpg",
+    "link": "https://dnipro.ithillel.ua/courses/java-for-beginners"
+    },
+    {"name":"Курс Java для середнього рівня", 
+        "description":"Бажаєш покращити свої навички в Java?", 
+        "price": 2200, 
+        "image": "java2.jpg",
+        "link": "https://dnipro.ithillel.ua/courses/java-intermediate"
+    }
+    ]
+    }
