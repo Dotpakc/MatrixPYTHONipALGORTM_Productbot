@@ -1,0 +1,4 @@
+venv
+.env
+photos/*
+__pycache__
