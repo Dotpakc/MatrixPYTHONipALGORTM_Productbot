@@ -1,0 +1,20 @@
+{
+    "name": "python",
+    "description": "Python - це інтерпретована, інтерактивна, об'єктно-орієнтована мова програмування. Вона поєднує потужні структури даних з ефективним підходом до програмування і аналізу даних.",
+    "image": "python.jpg",
+    "products":[
+        {"name":"Курс Python для початківців", 
+        "description":"Бажаєш почати вивченя", 
+        "price": 1000, 
+        "image": "python1.png",
+        "link": "https://dnipro.ithillel.ua/courses/python-for-kids"
+    },
+
+        {"name":"Курс Python для середнього рівня", 
+        "description":"Бажаєш покращити свої навички", 
+        "price": 2000, 
+        "image": "python2.png",
+        "link": "https://dnipro.ithillel.ua/courses/python-for-kids-lvl2"
+    }
+    ]
+}
