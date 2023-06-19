@@ -10,7 +10,12 @@ async def process_start_command(message: types.Message):
     
 @dp.callback_query_handler(text='main_back')
 async def process_main_back_command(call: types.CallbackQuery):
-    await call.message.edit_text("Обери пункт меню:", reply_markup=main_keyboard)
+    if call.message.photo:
+        await call.message.delete()
+        await call.message.answer("Обери пункт меню:", reply_markup=main_keyboard)
+    else:
+        await call.message.edit_text("Обери пункт меню:", reply_markup=main_keyboard)
+    
 
 
 @dp.callback_query_handler(text='support')
