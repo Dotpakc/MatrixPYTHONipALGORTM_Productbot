@@ -60,7 +60,13 @@ def get_image_course(image):
     else:
         return types.InputFile(f'shop/course/img/default.jpg')
 
-
+def get_product(all_courses, course_slug, product_slug):
+    for course in all_courses:
+        if slugify(course['name']) == course_slug:
+            for product in course['products']:
+                if slugify(product['name']) == product_slug:
+                    return product
+    return None
 
 
 

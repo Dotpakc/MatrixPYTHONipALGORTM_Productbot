@@ -6,6 +6,7 @@ from keyboards.main_kb import *
 
 @dp.message_handler(commands=['start'])
 async def process_start_command(message: types.Message):
+    print(message.from_user.id)
     await message.reply("Привіт!\nЯ бот компанії \"Hillel\".\nОбери пункт меню:", reply_markup=main_keyboard)
     
 @dp.callback_query_handler(text='main_back')
