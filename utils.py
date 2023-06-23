@@ -55,6 +55,9 @@ def generate_kb_lvl_course(course_slug, products, button_back):
     return markup
 
 def get_image_course(image):
+    if not len(image.split('.')) > 1:
+        return image
+    
     if os.path.exists(f'shop/course/img/{image}'):
         return types.InputFile(f'shop/course/img/{image}')
     else:
